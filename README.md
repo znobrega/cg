@@ -26,6 +26,14 @@ typedef struct {
 <p>Pelo fato de coordenadas para pixels e cores serem constantemente utilizadas, a definição do código acima ajuda na legibilidade e reusabilidade do código</p>
 
 <p>A função PutPixel ficou da seguinte forma:</p>
+![sigles](./prints/single.png)
+	<p align="center">
+	<img alt="tres" src="./prints/three.png"/>	
+	<h3>PutPixel({250, 250}, {255, 0, 0, 255});</h3>
+	<h3>PutPixel({50, 250}, {255, 0, 0, 255});</h3>
+	<h3>PutPixel({10, 150}, {255, 0, 0, 255});</h3>
+	</p>
+
 
 
 ```c
@@ -37,37 +45,34 @@ PutPixel(tPixel pixel, tColor color) {
 	FBptr[c + 2] = color.blue;
 	FBptr[c + 3] = color.alpha;
 };
-
 ```
-<br>
+
+<p align="center">
+<img alt="sing" src="./prints/single.png"/><br>
+<h5>PutPixel({250, 250}, {255, 0, 0, 255});</h5>
+</p>
+<p align="center">
+<img alt="tres" src="./prints/three.png"/>	
+<h5>PutPixel({250, 250}, {255, 0, 0, 255});</h5>
+<h5>PutPixel({50, 250}, {255, 0, 0, 255});</h5>
+<h5>PutPixel({10, 150}, {255, 0, 0, 255});</h5>
+</p>
 	
-	<p align="center">
-	<img alt="sing" src="./prints/single.png"/>
-
-	</p>
-
-	<p align="center">
-	<img alt="sing" src="./prints/three.png"/>	
-	<h3>PutPixel({250, 250}, {255, 0, 0, 255});</h3>
-	<h3>PutPixel({50, 250}, {255, 0, 0, 255});</h3>
-	<h3>PutPixel({10, 150}, {255, 0, 0, 255});</h3>
-	</p>
-
 ### DrawLine(tPixel init, tPixel end, tColor color1, tColor2)
 
 </p>Para a rasterização de linhas foi usado o algoritmo de Bresenham. Famoso por sua eficiência, já que o mesmo utiliza somente operações aritméticas simples, o algoritmo de Bresenham escolhe o pixel a ser desenhado por aproximação de uma linha que passa entre dois pontos. É bastante empregado para desenhar primitivas.</p>
 <p>A função foi desenvolvida a partir do algoritmo de ponto médio, apresentado nas notas de aula do professor Christian.</p>
 
-	<p align="center">
-	<img alt="midpoint" src="./prints/algoritmo.png" />
-	</p>
+<p align="center">
+<img alt="midpoint" src="./prints/algoritmo.png" />
+</p>
 
 <p>O código acima é referente a primeira octante, então uma implementação para as demais octantes se fez necessária. 
 O desenvolvimento foi feito seguindo os próximos conceitos.</p>
 	
-	<p align="center">
-	<img alt="octantes" src="./prints/cords.png"/>
-	</p>
+<p align="center">
+<img alt="octantes" src="./prints/cords.png"/>
+</p>
 <p>
 xI = x inicial<br>
 xF = x final<br>
@@ -86,9 +91,9 @@ oitavo octante:  o coeficiente angular varia entre 0 e -1 (0 >= m >= -1) e xI < 
 
 DrawLineInterpol({0, 512}, {512, 0}, {255, 0, 0, 255}, {0, 255, 0, 255});
 
-	<p align="center">
-	<img alt="octantes" src="./prints/line.png"/>
-	</p>
+<p align="center">
+<img alt="lineinter" src="./prints/line.png"/>
+</p>
 
 
 ### DrawTriangle(tPixel v1, tPixel v2, tPixel v3, tColor c1, tColor c2, tColor c3)
@@ -105,9 +110,9 @@ void DrawTriangle(tPixel v1, tPixel v2, tPixel, v3, tColor c1, tColor, c2, tColo
 
 ```
 
-	<p align="center">
-	<img alt="octantes" src="./prints/triangle.png"/>
-	</p>
+<p align="center">
+<img alt="triang" src="./prints/triangle.png"/>
+</p>
 
 
 
