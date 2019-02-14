@@ -113,6 +113,6 @@ void DrawTriangle(tPixel v1, tPixel v2, tPixel, v3, tColor c1, tColor, c2, tColo
 	<li>Slides do professor Christian Azambuja</li>
 </ul>
 
-
-
+### Autor
+<p>José Carlos Alves da Nóbrega Júnior</p>
 
