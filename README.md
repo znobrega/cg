@@ -42,8 +42,8 @@ PutPixel(tPixel pixel, tColor color) {
 <br>
 	
 	<p align="center">
-	<img alt="sing" src="./prints/single.png"/><br>
-	<h3>PutPixel({250, 250}, {255, 0, 0, 255});</h3>
+	<img alt="sing" src="./prints/single.png"/>
+
 	</p>
 
 	<p align="center">
