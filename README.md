@@ -40,16 +40,17 @@ PutPixel(tPixel pixel, tColor color) {
 
 ```
 <br>
-	PutPixel({250, 250}, {255, 0, 0, 255});
+	
 	<p align="center">
-	<img alt="sing" src="./prints/single"/>
+	<img alt="sing" src="./prints/single.png"/><br>
+	<h3>PutPixel({250, 250}, {255, 0, 0, 255});</h3>
 	</p>
 
-	PutPixel({250, 250}, {255, 0, 0, 255});
-	PutPixel({50, 250}, {255, 0, 0, 255});
-	PutPixel({10, 150}, {255, 0, 0, 255});
 	<p align="center">
-	<img alt="sing" src="./prints/three"/>
+	<img alt="sing" src="./prints/three.png"/>	
+	<h3>PutPixel({250, 250}, {255, 0, 0, 255});</h3>
+	<h3>PutPixel({50, 250}, {255, 0, 0, 255});</h3>
+	<h3>PutPixel({10, 150}, {255, 0, 0, 255});</h3>
 	</p>
 
 ### DrawLine(tPixel init, tPixel end, tColor color1, tColor2)
@@ -58,14 +59,14 @@ PutPixel(tPixel pixel, tColor color) {
 <p>A função foi desenvolvida a partir do algoritmo de ponto médio, apresentado nas notas de aula do professor Christian.</p>
 
 	<p align="center">
-	<img alt="midpoint" src="./prints/algoritmo" />
+	<img alt="midpoint" src="./prints/algoritmo.png" />
 	</p>
 
 <p>O código acima é referente a primeira octante, então uma implementação para as demais octantes se fez necessária. 
 O desenvolvimento foi feito seguindo os próximos conceitos.</p>
 	
 	<p align="center">
-	<img alt="octantes" src="./prints/cords"/>
+	<img alt="octantes" src="./prints/cords.png"/>
 	</p>
 <p>
 xI = x inicial<br>
@@ -86,7 +87,7 @@ oitavo octante:  o coeficiente angular varia entre 0 e -1 (0 >= m >= -1) e xI < 
 DrawLineInterpol({0, 512}, {512, 0}, {255, 0, 0, 255}, {0, 255, 0, 255});
 
 	<p align="center">
-	<img alt="octantes" src="./prints/line"/>
+	<img alt="octantes" src="./prints/line.png"/>
 	</p>
 
 
@@ -96,7 +97,7 @@ DrawLineInterpol({0, 512}, {512, 0}, {255, 0, 0, 255}, {0, 255, 0, 255});
 
 ```c
 void DrawTriangle(tPixel v1, tPixel v2, tPixel, v3, tColor c1, tColor, c2, tColor c3) {
-    DrawLine({100, 390}, {256, 150}, {255, 0, 0, 255}, {0, 0, 255, 255});	
+        DrawLine({100, 390}, {256, 150}, {255, 0, 0, 255}, {0, 0, 255, 255});	
 	DrawLine({256, 150}, {350, 390}, {0, 0, 255, 255}, {0, 255, 0, 255});
 	DrawLine({100, 390}, {350, 390}, {255, 0, 0, 255}, {0, 255, 0, 255});
 
@@ -105,7 +106,7 @@ void DrawTriangle(tPixel v1, tPixel v2, tPixel, v3, tColor c1, tColor, c2, tColo
 ```
 
 	<p align="center">
-	<img alt="octantes" src="./prints/triangle"/>
+	<img alt="octantes" src="./prints/triangle.png"/>
 	</p>
 
 
