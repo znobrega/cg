@@ -25,7 +25,7 @@ typedef struct {
 ```
 
 ```c
-PutPixel(tPixel pixel, tColor color) {
+void PutPixel(tPixel pixel, tColor color) {
 	int c = 4*pixel.x + 4*pixel.y*IMAGE_WIDTH;
 
 	FBptr[c] = color.red;
@@ -83,7 +83,7 @@ oitavo octante:  o coeficiente angular varia entre 0 e -1 (0 >= m >= -1) e xI < 
 
 ### DrawTriangle(tPixel v1, tPixel v2, tPixel v3, tColor c1, tColor c2, tColor c3)
 
-<p>Após o processo de criação da função para rasterização de linhas, o desenvolvimento de um triângulo torna-se bastante simples. É necessário apenas a passagem de coordenadas para o desenho de três linhas com alguns vertices coincidentes</p>
+<p>Após o processo de criação da função para rasterização de linhas, o desenvolvimento de um triângulo torna-se bastante simples. É necessário apenas a passagem de coordenadas para o desenho de três linhas com alguns vértices coincidentes</p>
 
 ```c
 void DrawTriangle(tPixel v1, tPixel v2, tPixel, v3, tColor c1, tColor, c2, tColor c3) {
@@ -99,7 +99,19 @@ void DrawTriangle(tPixel v1, tPixel v2, tPixel, v3, tColor c1, tColor, c2, tColo
 <img alt="triang" src="./prints/triangle.png"/>
 </p>
 
+<br>
 
+### Dificuldades
+<p>Certamente, a maior dificuldade do trabalho foi concluir a função DrawLine. Encontrar todas as relações matemáticas para todas as octantes, além de implementá-las algoritmicamente foi algo bastante trabalhoso, mas foi um ótimo exercício.</p>
+
+### Referências 
+
+<ul>
+	<li>http://matheuspraxedescg.blogspot.com/2016/08/trabalho-1-rasterizacao-de-ponto-e-linha.html</li>
+	<li>https://medium.com/@biancaamoriim/rasteriza%C3%A7%C3%A3o-de-primitivas-em-opengl-8680a76fdda5</li>
+	<li>https://en.wikipedia.org/wiki/Rasterisation</li>
+	<li>Slides do professor Christian Azambuja</li>
+</ul>
 
 
 
