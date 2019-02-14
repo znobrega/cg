@@ -23,18 +23,6 @@ typedef struct {
 } tPixel;
 
 ```
-<p>Pelo fato de coordenadas para pixels e cores serem constantemente utilizadas, a definição do código acima ajuda na legibilidade e reusabilidade do código</p>
-
-<p>A função PutPixel ficou da seguinte forma:</p>
-![sigles](./prints/single.png)
-	<p align="center">
-	<img alt="tres" src="./prints/three.png"/>	
-	<h3>PutPixel({250, 250}, {255, 0, 0, 255});</h3>
-	<h3>PutPixel({50, 250}, {255, 0, 0, 255});</h3>
-	<h3>PutPixel({10, 150}, {255, 0, 0, 255});</h3>
-	</p>
-
-
 
 ```c
 PutPixel(tPixel pixel, tColor color) {
@@ -48,14 +36,12 @@ PutPixel(tPixel pixel, tColor color) {
 ```
 
 <p align="center">
-<img alt="sing" src="./prints/single.png"/><br>
 <h5>PutPixel({250, 250}, {255, 0, 0, 255});</h5>
+<img alt="sing" src="./prints/single.png"/><br>
 </p>
 <p align="center">
+<h5>({250, 250}, {255, 0, 0, 255}), ({50, 250}, {255, 0, 0, 255}), ({10, 150}, {255, 0, 0, 255})</h5>
 <img alt="tres" src="./prints/three.png"/>	
-<h5>PutPixel({250, 250}, {255, 0, 0, 255});</h5>
-<h5>PutPixel({50, 250}, {255, 0, 0, 255});</h5>
-<h5>PutPixel({10, 150}, {255, 0, 0, 255});</h5>
 </p>
 	
 ### DrawLine(tPixel init, tPixel end, tColor color1, tColor2)
@@ -89,9 +75,8 @@ sexto octante: o coeficiente angular é maior do que 1 (m > 1) e yF < yI<br>
 sétimo octante: o coeficiente angular é menor do que -1 (m < -1) e yF < yI<br>
 oitavo octante:  o coeficiente angular varia entre 0 e -1 (0 >= m >= -1) e xI < xF<br>
 
-DrawLineInterpol({0, 512}, {512, 0}, {255, 0, 0, 255}, {0, 255, 0, 255});
-
 <p align="center">
+<h5>({0, 512}, {512, 0}, {255, 0, 0, 255}, {0, 255, 0, 255})</h5>
 <img alt="lineinter" src="./prints/line.png"/>
 </p>
 
