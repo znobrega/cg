@@ -104,14 +104,12 @@ void DrawTriangle(tPixel v1, tPixel v2, tPixel, v3, tColor c1, tColor, c2, tColo
 <br>
 
 ### Dificuldades
-<p>Certamente, a maior dificuldade do trabalho foi concluir a função DrawLine. Como o algoritmo funciona por octantes, ou seja, existem 8 variações para a implementação do algoritmo. Encontrar todas as relações matemáticas para todas as octantes, além de implementá-las foi algo bastante trabalhoso, mas foi um ótimo exercício.</p>
+<p>Certamente, a maior dificuldade do trabalho foi concluir a função DrawLine. Como o algoritmo funciona por octantes, ou seja, existem 8 variações para a implementá-lo. Encontrar todas as relações matemáticas para todas as octantes, além de implementá-las foi algo bastante trabalhoso, mas foi um ótimo exercício.</p>
 
 ### Possíveis melhoras
 <p>
-O algoritmo está desenhando pixels e linhas, com isso é possível desenhar as primitivas mais básicas, que possuam vértices. Porém, o desenho de um circulo é um pouco limitado, talvez seja necessário a implementação de um algoritmo separadamente para criar um círculo. 
-</p>
-<p>
-Tentei criar um círculo preenchido fazendo linhas de tamanho igual a partir de um vértice e mudando o angulo das linhas para que criasse a primitivade de 360º, mas o efeito não ficou fluído.
+O algoritmo está desenhando pixels e linhas, com isso é possível desenhar as primitivas mais básicas, que possuam vértices. Porém, o desenho de um circulo é um pouco limitado, talvez seja necessário a implementação de um algoritmo separadamente para criar um. 
+Tentei criar um círculo preenchido fazendo linhas de tamanho igual a partir de um vértice, e mudando o ângulo das linhas para que criasse a primitiva de 360º, mas o efeito não ficou fluído.
 </p>
 <p>
 Outra melhoria é a suavização das linhas que possuem uma angulação, já que elas sempre ficam com serrilhamento. Como as linhas são bem finas, o efeito visual não fica muito agradável.  Gostaria de estudar como posso amenizar esse efeito.
